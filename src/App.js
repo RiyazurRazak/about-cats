@@ -3,6 +3,7 @@ import Login from "./pages/LoginPage/LoginPage";
 import { createContext, useState } from "react";
 import Home from "./pages/HomePage/HomePage";
 import Navbar from "./components/NavbarComponent/NavbarComponent";
+import Categories from "./pages/CategoriesPages/CategoriesPage";
 
 export const userContext = createContext(null);
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/categories" element={<Categories />} />
         </Routes>
       </BrowserRouter>
     </userContext.Provider>
