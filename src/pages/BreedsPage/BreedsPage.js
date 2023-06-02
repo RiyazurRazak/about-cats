@@ -24,8 +24,6 @@ function Breeds() {
     })();
   }, []);
 
-  console.log(breeds);
-
   return (
     <Box m="10px 10%">
       <Heading mb="24px">All Breads List</Heading>
