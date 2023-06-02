@@ -9,6 +9,7 @@ import {
   PopoverContent,
   PopoverHeader,
   PopoverTrigger,
+  Text,
 } from "@chakra-ui/react";
 import React, { useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -40,6 +41,7 @@ function Navbar() {
               <PopoverCloseButton />
               <PopoverHeader>Are you sure want to logout</PopoverHeader>
               <PopoverBody>
+                <Text mb="12px">You are logged in as : {user.email}</Text>
                 <Button onClick={logoutHandller}>Logout Me</Button>
               </PopoverBody>
             </PopoverContent>
